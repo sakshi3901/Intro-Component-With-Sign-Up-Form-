@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="box1">
+    <h1>Learn to code by watching others</h1>
+
+    See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+    but understanding how developers think is invaluable.
+  </div>
+
+  <div class="box2">
+    <button type="button" class="subscription"><b style="color: white">Try it free 7 days</b> then $20/mo. thereafter</button>
+     <div class="form-box">
+       <form class="free-trial-form" action="index.html" method="post">
+         <input type="text" name="FirstName" placeholder="First Name" class="firstname">
+         <p class="error-msg1 error-msg">First Name cannot be empty</p>
+         <input type="text" name="LastName" placeholder="Last Name" class="lastname">
+         <p class="error-msg2 error-msg">Last Name cannot be empty</p>
+         <input type="email" name="Email" placeholder="Email" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+         <p class="error-msg3 error-msg">Email cannot be empty</p>
+         <input type="password" name="Password" placeholder="Password" class="password">
+         <p class="error-msg4 error-msg">Password Name cannot be empty</p>
+
+         <button type="button" class="claim-btn">CLAIM YOUR FREE TRIAL</button>
+
+         <p class="terms">By clicking the button, you are agreeing to our <span class="terms-red">Terms and Services</span></p>
+       </form>
+     </div>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
